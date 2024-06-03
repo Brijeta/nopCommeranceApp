@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 import time
-from PageObjects.Login import Login
+from PageObjects.Login_AdminPageObject import Login
 from PageObjects.AddCustomerPage import AddCustomer
 from Utilities.readProperties import ReadConfig
 from Utilities.cutomLogger import LogGen

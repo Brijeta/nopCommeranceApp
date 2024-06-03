@@ -3,13 +3,13 @@ import time
 import pytest
 import string
 from selenium import webdriver
-from PageObjects.Login import Login
+from PageObjects.Login_AdminPageObject import Login
 from PageObjects.AddCustomerPage import AddCustomer
 from Utilities.readProperties import ReadConfig
 from Utilities.cutomLogger import LogGen
 from selenium.webdriver.common.by import By
 
-class Test_003_Add_customer_TestCase:
+class Test_002_Add_customer_TestCase:
 
     #get the basic information forn config file to login
     baseURL = ReadConfig.getApplicationURL()
@@ -19,7 +19,7 @@ class Test_003_Add_customer_TestCase:
     #generate logs
     logger = LogGen.loggen()
 
-
+    @pytest.mark.sanity
     def test_addCustomer(self,setup):
         self.logger.info("***********Test case 003 Add Customer ********************")
         self.driver = setup #to get a driver from setup-->confest.py-->TestCases

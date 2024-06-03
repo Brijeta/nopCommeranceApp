@@ -1,6 +1,6 @@
 import pytest
 from selenium import webdriver
-from PageObjects.Login import Login
+from PageObjects.Login_AdminPageObject import Login
 from Utilities.readProperties import ReadConfig
 from Utilities.cutomLogger import LogGen
 
@@ -11,7 +11,7 @@ class Test_001_Login:
 
     logger = LogGen.loggen()
 
-    @pytest.mark.slow
+    @pytest.mark.sanity
     def test_homePageTitle(self,setup):
         self.logger.info("**************  Test_001_Login ********************")
         self.logger.info("***********Verifying Home page title **************")
