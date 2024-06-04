@@ -3,6 +3,9 @@ from selenium import webdriver
 from PageObjects.Login_AdminPageObject import Login
 from Utilities.readProperties import ReadConfig
 from Utilities.cutomLogger import LogGen
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
 
 class Test_001_Login:
     baseURL = ReadConfig.getApplicationURL()
@@ -15,8 +18,10 @@ class Test_001_Login:
     def test_homePageTitle(self,setup):
         self.logger.info("**************  Test_001_Login ********************")
         self.logger.info("***********Verifying Home page title **************")
-        self.driver = setup
-        self.driver.get(self.baseURL)
+        
+        self.driver = setup #get a driver from fixture
+
+        self.driver.get(self.baseURL) #get url
         act_title = self.driver.title
 
         if act_title=="Your store. Login":
@@ -37,6 +42,7 @@ class Test_001_Login:
         self.driver.get(self.baseURL)
 
         self.lp =Login(self.driver)
+        
         self.lp.set_username(self.username)
         self.lp.set_password(self.password)
         self.lp.click_login()

@@ -14,7 +14,7 @@ from PageObjects.CustomerRolesPage import CustomerRolesPage
 from PageObjects.SearchCustomer import SearchCustomer
 
 
-class Test_searchCustomerByname_004:
+class Test_searchCustomerByname_003:
     #get the basic information forn config file to login
     baseURL = ReadConfig.getApplicationURL()
     username = ReadConfig.getUsername()
@@ -23,9 +23,9 @@ class Test_searchCustomerByname_004:
     #generate logs
     logger = LogGen.loggen()
 
-    
+    @pytest.mark.regression
     def test_SearchCustomerByname(self,setup):
-        self.logger.info("***********Test case 004 search Customer By name ********************")
+        self.logger.info("***********Test case 003 search Customer By name ********************")
         self.driver = setup #to get a driver from setup-->confest.py-->TestCases
         self.driver.get(self.baseURL) #get the URL from method getApplicationURL-->ReadConfig-->readProperties-->Utilities
         self.driver.maximize_window()

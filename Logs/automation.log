@@ -194,3 +194,27 @@
 06/03/2024 12:13:47 PM: INFO: Search the customer by name test case begin
 06/03/2024 12:13:51 PM: INFO: Search by name 'Virat'
 06/03/2024 12:13:53 PM: INFO: Test Case Ended
+06/03/2024 01:57:40 PM: INFO: ***********Test case 003 Add Customer ********************
+06/03/2024 01:57:42 PM: INFO: ***************Login Successful****************
+06/03/2024 01:57:42 PM: INFO: *************Add customer details test starting *******************
+06/03/2024 01:57:49 PM: INFO: ***********Providing Customer inforamtion **************
+06/03/2024 01:57:53 PM: INFO: **********New Cutomer data saved(Test Case paassed)********************
+06/03/2024 01:57:59 PM: INFO: **************  Test_001_Login ********************
+06/03/2024 01:57:59 PM: INFO: ***********Verifying Home page title **************
+06/03/2024 01:58:00 PM: INFO: Home page test case pass
+06/03/2024 01:58:25 PM: INFO: ***********Test case 003 search Customer By name ********************
+06/03/2024 01:58:27 PM: INFO: ***************Login Successful****************
+06/03/2024 01:58:27 PM: INFO: Search the customer by name test case begin
+06/03/2024 01:58:30 PM: INFO: Search by name 'Virat'
+06/03/2024 01:58:32 PM: INFO: Test Case Ended
+06/03/2024 02:00:29 PM: INFO: ***********Test case 003 search Customer By name ********************
+06/03/2024 02:00:32 PM: INFO: ***************Login Successful****************
+06/03/2024 02:00:32 PM: INFO: Search the customer by name test case begin
+06/03/2024 02:00:35 PM: INFO: Search by name 'Virat'
+06/03/2024 02:00:37 PM: INFO: Test Case Ended
+06/04/2024 10:11:55 AM: INFO: ***********Test case 003 Add Customer ********************
+06/04/2024 10:11:59 AM: INFO: ***************Login Successful****************
+06/04/2024 10:11:59 AM: INFO: *************Add customer details test starting *******************
+06/04/2024 10:12:02 AM: INFO: **************  Test_001_Login ********************
+06/04/2024 10:12:02 AM: INFO: ***********Verifying Home page title **************
+06/04/2024 10:12:03 AM: INFO: Home page test case pass
